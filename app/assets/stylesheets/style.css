@@ -1,618 +1,1403 @@
-/*Website Template by freewebsitetemplates.com*/
-@font-face {
-	font-family: 'Arimo-Bold';
-	src: url('../fonts/Arimo-Bold/Arimo-Bold.eot');
-	src: url('../fonts/Arimo-Bold/Arimo-Bold.woff') format('woff'), url('../fonts/Arimo-Bold/Arimo-Bold.ttf') format('truetype'), url('../fonts/Arimo-Bold/Arimo-Bold.svg') format('svg');
-}
-@font-face {
-	font-family: 'ChangaOne';
-	src: url('../fonts/ChangaOne/ChangaOne-Regular.eot');
-	src: url('../fonts/ChangaOne/ChangaOne-Regular.woff') format('woff'), url('../fonts/ChangaOne/ChangaOne-Regular.ttf') format('truetype'), url('../fonts/ChangaOne/ChangaOne-Regular.svg') format('svg');
-}
-@font-face {
-	font-family: 'Comfortaa-Regular';
-	src: url('../fonts/Comfortaa/Comfortaa-Regular.eot');
-	src: url('../fonts/Comfortaa/Comfortaa-Regular.woff') format('woff'), url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype'), url('../fonts/Comfortaa/Comfortaa-Regular.svg') format('svg');
-}
+/* Website template by freewebsitetemplates.com */
+/*------------------------- Layout styles ------------------------*/
 body {
-	background: #ededed url(../images/bg-header.gif) repeat-x top center;
-	line-height: 1;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-	padding: 0;
+	background:url(../assets/bg-body.jpg);
+	margin:0;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
-#header {
-	margin: 0 auto;
-	padding: 0;
-	width: 960px;
+p a {
+	color:#707070!important;
 }
-#header .section {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+p a:hover {
+	color:#525252!important;
 }
-#header .section .logo {
-	float: left;
-	margin: 0;
-	padding: 60px 0 0 10px;
-	width: 324px;
-}
-#header .section .logo a {
-	background: url(../images/bg-logo.png) repeat-x top left;
-	color: #fff;
-	display: block;
-	font-family: 'Arimo-Bold';
-	font-size: 60px;
+/*------------------------- Layout styles ------------------------*/
+@font-face {
+	font-family: 'forumregular';
+	src: url('../fonts/forum-regular-webfont.eot');
+	src: url('../fonts/forum-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/forum-regular-webfont.woff') format('woff'), url('../fonts/forum-regular-webfont.ttf') format('truetype'), url('../fonts/forum-regular-webfont.svg#forumregular') format('svg');
 	font-weight: normal;
-	height: 130px;
-	line-height: 130px;
-	margin: 0;
-	padding: 0;
+	font-style: normal;
+}
+/*------------------------- Header ------------------------*/
+.header {
+	background:url(../assets/bg-header.png) repeat-x;
+	height:168px;
+	margin:0 0 41px;
+}
+.header div a {
+	outline:none;
+}
+.header div {
+	margin:0 auto;
+	padding:0 30px;
+	position:relative;
+	width:900px;
+}
+.header div a#logo {
+	display:block;
+	float:left;
+	height:103px;
+	margin:0 28px 0 0;
+	width:272px;
+}
+.header div a#logo img {
+	border:0;
+}
+.header div ul {
+	list-style:none;
+	margin:0;
+	overflow:hidden;
+	padding:89px 0 0;
+}
+.header div ul li:first-child {
+	margin:0;
+}
+.header div ul li.selected {
+	background:url(../assets/border-horizontal.gif) repeat-x left top #252525;
+}
+.header div ul li {
+	float:left;
+	height:51px;
+	margin:0 0 0 15px;
+	padding:0 10px;
 	text-align:center;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 270px;
 }
-#header .section ul {
-	display: inline-block;
-	float: right;
+.header div ul li.selected a {
+	color:#fff;
+	text-shadow:0 -1px 0 #010101;
+}
+.header div ul li a {
+	color:#e8e1aa;
+	display:block;
+	font-size:16px;
+	font-weight:700;
+	line-height:50px;
+	text-decoration:none;
+	text-shadow:0 -1px 0 #524437;
+	text-transform:uppercase;
+}
+.header div ul li a:hover {
+	color:#fff;
+}
+.header div div {
+	background:url(../assets/interface.png) no-repeat -10px -606px;
+	height:73px;
+	padding:0;
+	position:absolute;
+	right:30px;
+	text-align:center;
+	top:0;
+	width:302px;
+}
+.header div div p {
+	color:#fff;
+	display:block;
+	font-size:16px;
+	font-weight:700;
+	margin:18px 0 0;
+	text-shadow:0 -1px 0 #030002;
+	text-transform:uppercase;
+}
+.header div ul li a span {
+	font-size:20px;
+}
+.header div div p > span {
+	font-size:20px;
+	display: inline;
+}
+.header div div p > span > span {
+	color:#E17537;
+	display:inline;
+	font-size:19px;
+	margin:0;
+	width:auto;
+	padding:0;
+ *margin-right:4px; /* Needed for IE7 */
+}
+/*------------------------- Body ------------------------*/
+.body div {
+	background:url(../assets/shadow.png) no-repeat left bottom;
+	border:0;
+	margin:0 auto;
+	padding:0 30px 42px;
+	width:900px;
+}
+.body div a {
+	outline:none;
+}
+.body div div.featured {
+	background:url(../assets/shadow.png) no-repeat left bottom;
+	border-radius:0 0 0 0!important;
+	overflow:hidden;
+	padding:0 0 42px!important;
+	width:auto;
+}
+.body div div.featured img {
+	border:2px solid #a1ad7f;
+	float:left;
+}
+.body div div.featured div {
+	background:url(../assets/frame1.gif) no-repeat center 12px #757e63;
+	border:0 none!important;
+	border-radius:0 0 0 0!important;
+	float:left;
+	height:379px;
+	padding:0!important;
+	text-align:center;
+	width:300px;
+}
+.body div div.featured div div {
+	background:url(../assets/frame2.gif) no-repeat center 349px;
+	width:auto!important;
+}
+.body div div.featured div div h3 {
+	background:url(../assets/interface.png) no-repeat -1px -680px;
+	border:0 none;
+	color:#534a39;
+	font-size:16px;
+	height:52px;
+	line-height:42px;
+	margin:24px auto 25px;
+	width:281px;
+	text-indent: 40px;
+}
+.body div div.featured div div h3 span {
+	font-size:20px;
+}
+.body div div.featured div div p {
+	border:0!important;
+	color:#fff!important;
+	line-height:24px!important;
+	padding:0 30px!important;
+	text-align:justify!important;
+	font-family: 'forumregular';
+	letter-spacing:0.028em;
+	font-weight:normal;
+	font-size:18px
+}
+.body div div.featured div div a {
+	background:url(../assets/interface.png) no-repeat -10px -855px;
+	color:#fff;
+	display:block;
+	float:none;
+	font-size:14px;
+	font-weight:normal;
+	height:41px;
+	line-height:42px;
+	margin:68px auto 0;
+	padding:0;
+	text-decoration:none;
+	text-shadow:0 -1px 0 #27221c;
+	width:160px;
+	letter-spacing:0.075em;
+}
+.body div div.featured div div a:hover {
+	background:url(../assets/interface.png) no-repeat -266px -751px;
+	color:#fff!important;
+}
+.body div div {
+	background:none;
+	background-color:#e8e1ab;
+	border-radius:5px;
+	float:none!important;
+	overflow:hidden;
+	padding:17px 0!important;
+}
+.body div div div {
+	background:none;
+	border:1px solid #717a5d;
+	border-radius:0;
+	padding:0!important;
+	width:880px;
+}
+.body div div div div {
+	border-style:solid none;
+	margin:2px 0;
+}
+.body div div div div div.section {
+	border:0;
+	float:left;
+	margin:0;
+	padding:0!important;
+	width:588px;
+	border-color: #717A5D;
+	border-style: none solid none none;
+	border-width: 1px;
+}
+.body div div div div div.section h2 {
+	border-color:#717a5d;
+	border-width:1px;
+	color:#756752;
+	font-size:30px!important;
+	height:73px;
+	line-height:77px;
+	margin:2px auto;
+	text-align:center;
+	text-shadow:0 1px 0 #fff7c6;
+	border-color: #717A5D;
+	border-style: none none solid;
+	border-width: 1px;
+	padding:2px 0 0 !important;
+}
+.body div div div div div.section p {
+	border-color:#6d765b;
+	border-style:solid none none;
+	border-width:1px;
+	color:#6d765b;
+	line-height:24px;
+	margin:2px 0 0;
+	padding:24px 15px 0;
+	text-align:justify;
+	font-family: 'forumregular';
+	font-size:20px;
+	letter-spacing:0.028em;
+	color:#707070;
+}
+.body div div div div.section > p {
+	font-size:20px;
+}
+.body div div div div div.section p a {
+	color:#707070;
+	display:inline;
+	float:none;
+	font-size:20px;
+	font-weight:normal;
+	margin:0;
+	text-decoration:underline;
+	font-family: 'forumregular';
+}
+.body div div div div div.section ul {
+	float:left;
+	list-style:none;
+	margin:25px 0 28px;
+	padding:0 0 0 15px;
+	width:250px;
+}
+.body div div div div div.section ul.last {
+	padding:0 0 0 15px;
+	margin: 25px 0 0 44px;
+}
+.body div div div div div.section ul li {
+	background:url(../assets/interface.png) no-repeat -362px 2px;
+	border-style:none;
+	margin:11px 0 0;
+	padding:0 0 0 20px;
+}
+.body div div div div div.section ul li p {
+	color:#707070;
+	display:inline;
+	float:none;
+	font-size:16px;
+	letter-spacing:0.028em;
+	line-height:24px;
+	text-decoration:none;
+	font-family: 'forumregular';
+	border:0;
+	margin:0;
+	padding:0;
+}
+.body div div div div div {
 	margin: 0;
-	overflow: hidden;
-	padding: 114px 0 0;
+	width: 290px;
+	float:left!important;
+	border:0;
 }
-#header .section ul li {
-	background: url(../images/bg-nav-right.gif) no-repeat top right;
-	display: inline-block;
-	float: left;
-	list-style: none;
-	margin: 0 10px;
+.body div div div h3 {
+	color:#756555;
+	font-size:14px;
+	margin:0;
+	padding:9px 0 5px 17px;
+	text-align:left;
+	line-height:24px;
+	font-weight:normal;
+	padding-left: 17px;
+	letter-spacing:0.028em;
+	border-color: #717A5D;
+	border-style: none none solid;
+	border-width: 1px;
+}
+.body div div div ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.body div div div ul li:first-child {
+	margin:2px 0 0;
+}
+.body div div div ul li {
+	border-color:#717a5d;
+	border-style:solid none none;
+	border-width:1px;
+	overflow:hidden;
+}
+.body div div div ul li.last {
+	border-color:#717a5d;
+	border-style:solid none;
+	border-width:1px;
+}
+.body div div div ul li div {
+	background:none;
+	width:290px!important;
+}
+.body div div div ul li div span {
+	color:#717A5D;
+	display:block;
+	font-size:16px;
+	font-weight:400;
+	margin:12px 0 0 17px;
+	font-family: 'forumregular';
+}
+.body div div div ul li div:first-child p {
+	border:0 none!important;
+	color:#707070;
+	font-size:16px!important;
+	letter-spacing:0.028em;
+	line-height:24px;
+	margin:2px 0 20px;
+	padding:6px 20px 0!important;
+	font-family: 'forumregular';
+}
+.body div div div a {
+	color:#756752;
+	display:block;
+	float:right;
+	font-size:16px;
+	margin:0 10px 0 0;
+	line-height:24px;
+	letter-spacing:0.028em;
+	padding:9px 0 0;
+	text-decoration:none;
+	font-family: 'forumregular';
+}
+.body div div div a:hover {
+	color:#756752!important;
+}
+.body div div div div.about, .body div div div div.programs, .body div div div div.competition, .body div div div div.activities, .body div div div div.application, .body div div div div.staff, .body div div div div.register, .body div div div div.staff, .body div div div div.blog, .body div div div div.events {
+	border-bottom: 0 none;
+	margin: 2px 0 0;
+	padding: 0 0 2px !important;
+	width: auto;
+}
+.body div div div div.about {
+	border:0;
+}
+.body div div div div.about div:first-child {
+	border-style:solid none none;
+	padding:0!important;
+	width:auto;
+}
+.body div div div div.section h2 {
+	margin:2px 0;
+	padding-bottom:3px;
+	width:589px!important;
+}
+.body div div div div.about div:first-child h2, .body div div div div.programs h2, .body div div div div.competition h2, .body div div div div.activities h2, .body div div div div.application h2, .body div div div div.staff h2, .body div div div div.register h2, .body div div div div.blog h2, .body div div div div.events h2, .body div div div div div.section h2, .body div.contact div div div.contact h2 {
+	color:#756752;
+	text-transform:uppercase;
+	font-size:36px;
+	letter-spacing:0.028em;
+	font-weight:bold;
+	text-shadow:0 1px 0 #fff8c7;
+	text-align:center;
+	border-color: #717A5D;
+	border-style: none none solid;
+	border-width: 1px;
+	padding:19px 0 18px;
+	margin:0 0 2px !important;
+}
+.body div div div div.about div:first-child div {
+	border-style:solid none solid;
+	padding:32px 30px 0!important;
+	width:auto;
+	border-width: 1px;
+	font-family: 'forumregular';
+	font-size:16px;
+	line-height:24px;
+	border-color: #717A5D;
+}
+.body div div div div.about div:first-child p {
+	border:0 none;
+	color:#707070;
+	font-size:16px;
+	letter-spacing:1px;
+	line-height:24px;
+	margin:4px 0 25px;
+	padding:0;
+	font-family: 'forumregular';
+}
+.body div div div div.about div:first-child p a {
+	color: #E17439;
+	display: inline;
+	float: none;
+	font-weight: 400;
+	margin: 0;
 	padding: 0;
-}
-#header .section ul li a {
-	background: url(../images/bg-nav-left.gif) no-repeat top left;
-	color: #fff;
-	display: inline-block;
-	font-size: 16px;
-	height: 30px;
-	letter-spacing: 0.05em;
-	line-height: 30px;
-	margin: 0;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-#header .section ul li a:hover {
-	color: #ccc;
-}
-#header .section ul li.selected {
-	background: url(../images/bg-nav-right-selected.gif) no-repeat top right;
-}
-#header .section ul li.selected a {
-	background: url(../images/bg-nav-left-selected.gif) no-repeat top left;
-}
-#header .article {
-	background: #fff;
-	border: 2px solid #5fb3bd;
-	border-radius: 4px;
-	margin: 50px auto 28px;
-	overflow: hidden;
-	padding: 0;
-	width: 936px;
-}
-#header .article img {
-	display: block;
-	float: left;
-	margin: 0 50px 0 0;
-	padding: 0;
-}
-#header .article h1 {
-	color: #1b2130;
-	font-family: 'ChangaOne';
-	font-size: 40px;
-	font-weight: normal;
-	margin: 0;
-	line-height: 50px;
-	padding: 110px 30px 30px;
-}
-#body {
-	margin: 0 auto;
-	min-height: 812px;
-	padding: 20px 0 50px;
-	width: 960px;
-}
-#body > ul {
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-}
-#body > ul li {
-	float: left;
-	list-style: none;
-	margin: 0 10px;
-	padding: 0;
-	width: 220px;
-}
-#body > ul li > a {
-	background: url(../images/frame.png) no-repeat center top;
-	display: block;
-	margin: 0;
-	padding: 5px 5px 29px;
-}
-#body > ul li > a:hover {
-	opacity: 0.9;
-}
-#body > ul li > a img {
-	border: 0;
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-#body > ul li b {
-	color: #000;
-	display: block;
-	font-size: 18px;
-	font-weight: normal;
-	margin: 0;
-	padding: 10px 0 5px;
-	text-transform: capitalize;
-}
-#body > ul li p {
-	color: #464646;
-	font-size: 12px;
-	line-height: 24px;
-	margin: 0;
-	padding: 0;
-}
-#body > ul li p a {
-	color: #464646;
 	text-decoration: underline;
 }
-#body > ul li p a:hover {
-	color: #252525;
+.body div div div div.about div {
+	border-style:none none solid;
+	padding:32px 30px!important;
+	width:820px;
+	border-width:1px;
+	border-color: #717A5D;
 }
-#body > div {
-	margin: 0;
-	overflow: hidden;
-	padding: 50px 0 0;
+.body div div div div.about div:first-child img {
+	margin-bottom:27px;
 }
-#body > .more {
-	color: #464646;
-	display: block;
-	font-size: 13px;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	text-decoration: underline;
-	text-transform: capitalize;
-	width: 80px;
+.body div div div div.about div div:first-child {
+	border:0!important;
+	margin-right:40px;
+	width:412px;
 }
-#body > .more:hover {
-	color: #4a8b92;
+.body div div div div.about div div {
+	border:0;
+	float:left;
+	padding:0!important;
+	width:368px;
 }
-#body h2 {
-	background: url(../images/bg-featured.png) repeat-x;
-	color: #fff;
-	font-family: 'Comfortaa-Regular';
-	font-size: 20px;
-	font-weight: normal;
-	height: 47px;
-	letter-spacing: 0.1em;
-	left: 15px;
-	line-height: 47px;
-	margin: 0;
-	padding: 0 25px;
-	position: absolute;
-	text-transform: capitalize;
-	top: -14px;
+.body div div div div.about div div p {
+	border:0 none;
+	color:#707070;
+	font-size:16px;
+	letter-spacing:1px;
+	line-height:24px;
+	margin:5px 0 24px;
+	padding:0;
+	font-family: 'forumregular';
 }
-#body h3 {
-	color: #2f394e;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	font-weight: normal;
-	margin: 0;
-	padding: 25px 10px 40px;
-	text-transform: capitalize;
+.body div div div div.about div div p a {
+	font-weight:400;
+	text-decoration:underline;
+	display:inline;
+	margin:0;
+	padding:0;
+	float:none;
 }
-#body > b {
-	color: #2f394e;
-	display: inline-block;
-	font-size: 18px;
-	font-weight: normal;
-	margin: 0;
-	padding: 0 10px;
-	text-transform: capitalize;
+.body div div div div.programs div.first, .body div div div div.competition div.first, .body div div div div.activities div.first, .body div div div div.staff div.first {
+	border-style:solid solid solid none;
+	width:248px;
 }
-#body > p {
-	color: #464646;
-	font-size: 13px;
-	line-height: 24px;
-	margin: 0;
-	padding: 30px 10px;
+.body div div div div.programs div, .body div div div div.competition div, .body div div div div.activities div, .body div div div div.staff div, .body div div div div.blog div, .body div div div div.events div {
+	border-style:solid none;
+	border-width:1px;
+	min-height:791px;
+	padding:33px 20px 0!important;
+	width:551px;
+	border-color:#717a5d;
 }
-#body > p a {
-	color: #464646;
-	text-decoration: underline;
+.body div div div div.competition div h3.title {
+	margin:48px 0 0;
 }
-#body > p a:hover {
-	color: #252525;
+.body div div div div.programs div.first ul, .body div div div div.competition div.first ul, .body div div div div.activities div.first ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:252px;
 }
-#body div div {
-	float: left;
-	margin: 0 10px;
-	padding: 0;
+.body div div div div.programs div.first ul li, .body div div div div.competition div.first ul li, .body div div div div.activities div.first ul li {
+	background:none;
+	margin:0;
+	padding:0;
+	width:auto;
+	border:0;
 }
-#body div .featured {
-	background: #fff;
-	border: 5px solid #5fb3bd;
-	border-radius: 4px;
-	min-height: 450px;
-	padding: 45px 15px 15px;
-	position: relative;
-	width: 420px;
+.body div div div div.programs div.first ul li.selected a {
+	color:#fff!important;
 }
-#body div .featured h2 {
-	text-align: center;
+.body div div div div.programs div.first ul li.selected a:hover {
+	color:#fff!important;
 }
-#body div .featured h3 {
-	color: #354057;
-	font-size: 20px;
-	font-weight: normal;
-	margin: 0;
-	padding: 10px 0 0;
-	text-transform: none;
+.body div div div div.programs div.first ul li a {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size:18px!important;
+	line-height:24px;
 }
-#body div .featured img {
-	display: block;
-	float: left;
-	margin: 10px 30px 25px 0;
-	padding: 0;
+.body div div div div.programs div.first ul li a:hover, .body div div div div.activities div.first ul li a:hover, .body div div div div.competition div.first ul li a:hover {
+	color:#e9e1ac!important;
+	text-decoration:none;
 }
-#body div .featured p {
-	clear: both;
-	color: #464646;
-	font-size: 12px;
-	line-height: 24px;
-	margin: 0 0 24px;
-	padding: 0;
+.body div div div div.programs div.first ul li.selected a, .body div div div div.competition div.first ul li.selected a, .body div div div div.activities div.first ul li.selected a {
+	background:url(../assets/interface.png) no-repeat -10px -803px!important;
+	height:42px;
+	text-shadow:0 -1px 0 #99562e;
+	width:252px;
 }
-#body div .featured p a {
-	color: #464646;
+.body div div div div.programs div.first ul li.selected a:hover, .body div div div div.competition div.first ul li.selected a:hover, .body div div div div.activities div.first ul li.selected a:hover {
+	color:#fff;
 }
-#body div .featured p a:hover {
-	color: #252525;
+.body div div div div.programs div.first ul li a, .body div div div div.competition div.first ul li a, .body div div div div.activities div.first ul li a {
+	background:url(../assets/interface.png) no-repeat -10px -751px!important;
+	color:#fff;
+	display:block;
+	font-size:21px;
+	font-weight:700;
+	height:42px;
+	line-height:36px;
+	margin:0 0 18px;
+	padding:0;
+	text-align:center;
+	text-shadow:0 -1px 0 #424242;
+	width:252px;
 }
-#body div .section {
-	width: 460px;
+.body div div div div.programs div h3, .body div div div div.competition div h3, .body div div div div.activities div h3, .body div div div div.staff div h3 {
+	border:0 none;
+	font-size:21px;
+	margin:0;
+	padding:0;
 }
-#body div .section div {
-	background: #519194;
-	border: 5px solid #5fb3bd;
-	border-radius: 4px;
+.body div div div div.programs div p, .body div div div div.competition div p, .body div div div div.activities div p, .body div div div div.staff div p, .body div div div div.blog div p, .body div div div div.events div p {
+	border:0;
+	font-size:16px;
+	margin:4px 0 24px;
+	padding:0;
+	line-height:24px;
+	letter-spacing:0.028em;
+	font-family: 'forumregular';
+	color:#707070;
+}
+.body div div div div.programs div p a, .body div div div div.competition div p a, .body div div div div.activities div p a {
+	display: inline;
 	float: none;
 	margin: 0;
-	padding: 0 15px;
-	position: relative;
-}
-#body div .section .article {
-	height: 183px;
-	margin-bottom: 25px;
-	padding: 55px 15px 20px;
-	text-align: right;
-}
-#body div .section .article h2 {
-	text-align: left;
-}
-#body div .section .article h2 a {
-	background: url(../images/icons.png) no-repeat 0 10px;
-	display: inline-block;
-	height: 40px;
-	margin: 0;
 	padding: 0;
-	text-indent: -99999px;
-	width: 31px;
-}
-#body div .section .article p {
-	color: #f5f5f5;
-	font-size: 12px;
-	line-height: 24px;
-	margin: 0;
-	padding: 20px 0px;
-	text-align: left;
-}
-#body div .section .article p a {
-	color: #f5f5f5;
 	text-decoration: underline;
 }
-#body div .section .article p a:hover {
-	color: #97d0d3;
+.body div div div div.competition div.first ul {
+	width:252px;
 }
-#body div .section .article > a {
-	color: #f5f5f5;
-	font-size: 18px;
-	text-decoration: none;
+.body div div div div.competition div ul {
+	margin:5px 0 12px;
+	overflow:hidden;
+	padding:0;
+	width: auto;
 }
-#body div .section .article > a:hover {
-	color: #97d0d3;
+.body div div div div.competition div ul li {
+	background:url(../assets/interface.png) no-repeat -362px 2px;
+	float:left;
+	margin:0 0 11px;
+	padding:0 0 0 20px;
+	width:255px;
+	border:0;
 }
-#body div .section .newsletter {
-	height: 168px;
-	padding: 30px 15px 19px 214px;
-	position: relative;
+.body div div div div.competition div ul li p {
+	margin:0;
+	padding: 0 14px 0 0;
 }
-#body div .section .newsletter img {
-	display: block;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: -13px;
-	z-index: 5;
+.body div div div div.competition div ul li a {
+	background:none;
+	margin:0;
+	padding:0;
+	width:auto;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size: 18px !important;
 }
-#body div .section .newsletter p {
-	color: #f5f5f5;
-	font-size: 16px;
-	font-weight: bold;
-	letter-spacing: 0.03em;
+.body div div div div.competition div.first ul li {
+	background:none;
+}
+.body div div div div.competition div.first ul li.selected a:hover {
+	color:#fff!important;
+}
+.body div div div div.activities div.first ul li.selected a:hover {
+	color:#fff!important;
+}
+.body div div div div.activities div ul {
+	margin:0;
+	padding: 14px 0 0;
+}
+.body div div div div.activities div ul li {
+	border:0;
+	background:url(../assets/interface.png) no-repeat -362px 9px;
+	padding:0 0 0 20px;
+}
+.body div div div div.activities div.first ul li a {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size: 18px !important;
+}
+.body div div div div.activities div p {
+	margin: 6px 0 0;
+}
+.body div div div div.activities div ul li a {
+	margin:0;
+	padding:0;
+}
+.body div div div div.application form, .body div div div div.register form {
+	border-color:#717A5D;
+	border-style:solid none;
+	border-width:1px;
+	margin:0;
+	overflow:hidden;
+	padding:24px 20px 40px;
+	width:840px;
+}
+.body div div div div.register form textarea#address {
+	background:url(../assets/interface.png) no-repeat -10px -517px;
+	border:0;
+	color:#776855;
+	font-size:14px;
+	height:65px;
+	margin:0 0 1px;
+	overflow:auto;
+	padding:7px 5px;
+	width:415px;
+	resize:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.body div div div div.register form div {
+	width:auto;
+}
+.body div div div div.application form div:first-child {
+	margin-bottom:52px;
+	width:435px!important;
+}
+.body div div div div.application form div:first-child td {
+	color:#776855;
+	font-size:17px;
+	font-weight:700;
+	height:auto;
+	margin:0 10px 0 0;
+	text-transform:uppercase;
+	width:auto;
+}
+.body div div div div.application form div:first-child td, .body div div div div.register form div:first-child td, .body div div div div.contact form td {
+	padding:0 0 15px;
+	vertical-align:top;
+}
+.body div div div div.application form div:first-child label {
+	color:#776855;
+	display:inline-block;
+	font-size:17px;
+	font-weight:700;
+	text-transform:uppercase;
+	width:135px;
 	line-height: 30px;
-	margin: 0;
-	padding: 0;
 }
-#body div .section .newsletter p span {
-	display: block;
+.body div div div div.register form div:first-child label {
+	color:#776855;
+	display:inline-block;
+	font-size:16px;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:0.028em;
+	width:229px;
+	line-height: 31px;
 }
-#body div .section .newsletter form {
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
+.body div div div div.register form div:first-child label.age {
+	margin:0 0 0 -140px;
+	width:auto;
 }
-#body div .section .newsletter form span {
-	color: #f5f5f5;
-	clear: both;
-	display: block;
-	font-size: 14px;
-	letter-spacing: 0.01em;
-	line-height: 30px;
-	margin: 0;
-	padding: 0 0 4px;
-	text-transform: capitalize;
-	text-shadow: 0 -1px 0 #285f62;
+.body div div div div.application form div:first-child input {
+	background:url(../assets/interface.png) no-repeat -10px -946px;
+	border:0;
+	color:#776855;
+	font-size:14px;
+	padding:7px 5px;
+	width:250px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
 }
-#body div .section .newsletter form input {
-	background: url(../images/interface.png) no-repeat;
-	border: 0;
-	display: block;
-	float: left;
-	height: 30px;
-	margin: 0;
-	padding: 0;
+.body div div div div.register form div:first-child input, .body div div div div.contact form input {
+	background:url(../assets/interface.png) no-repeat -10px -1026px;
+	border:0;
+	color:#776855;
+	font-size:14px;
+	padding:7px 5px;
+	width:410px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
 }
-#body div .section .newsletter form #email {
-	background-position: -399px -72px;
-	color: #68a7aa;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-style: italic;
-	line-height: 30px;
-	padding: 0 5px;
+.body div div div div.register form div:first-child input#duration, .body div div div div.register form div:first-child input#num-of-children, .body div div div div.register form div:first-child input#name-of-child {
+	background:url(../assets/interface.png) no-repeat -10px -986px;
+	width:260px;
+}
+.body div div div div.register form div:first-child input#age {
+	background:url(../assets/interface.png) no-repeat -301px -690px;
+	float:left;
+	margin:0 0 0 -84px;
+	padding:7px 5px;
+	width:60px;
+}
+.body div div div div.application form div:first-child input#gender1 {
+	background:none;
+	color:#776855;
+	font-size:17px;
+	font-weight:700;
+	height:auto;
+	margin:0 10px 0 0;
+	text-transform:uppercase;
+	width:auto;
+}
+.body div div div div.register form div:first-child a img {
+	border:0;
+}
+.body div div div div.register form div input#submit {
+	background:url(../assets/interface.png) no-repeat -276px -404px;
+	cursor:pointer;
+	float:right;
+	height:32px;
+	margin:0 0 65px;
+	padding:0 0 3px;
+	width:132px;
+	text-shadow:0 -1px 0 #99562e;
+	font-size:16px;
+	line-height:24px;
+	text-transform:uppercase;
+	color:#fff;
+	font-family:inherit;
+	letter-spacing:0.028em;
+}
+.body div div div div.register form div input#submit:hover {
+	background:url(../assets/interface.png) no-repeat -276px -457px;
+}
+.body div div div div.application form div:first-child input#gender2 {
+	background:none;
+	color:#776855;
+	font-size:17px;
+	font-weight:700;
+	height:auto;
+	margin:0 10px 0 20px;
+	text-transform:uppercase;
+	width:auto;
+}
+.body div div div div.application form div {
+	border:0;
+	float:left;
+	width:405px;
+}
+.body div div div div.application form div td {
+	padding:0 0 12px;
+}
+.body div div div div.application form div label {
+	color:#776855;
+	display:inline-block;
+	font-size:17px;
+	font-weight:700;
+	text-transform:uppercase;
+	width:130px;
+}
+.body div div div div.application form input#application-submit {
+	background:url(../assets/interface.png) no-repeat -189px -859px;
+	border:0 none;
+	clear:both;
+	cursor:pointer;
+	display:block;
+	height:32px;
+	margin:0 auto;
+	width:222px;
 	text-align: center;
+	text-shadow: 0 -1px 0 #99562E;
+	text-transform: uppercase;
+	color:#fff;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size:16px;
+	line-height:24px;
+	padding:0 0 3px;
+}
+.body div div div div.application form input#application-submit:hover {
+	background:url(../assets/interface.png) no-repeat -215px -1066px;
+}
+.body div div div div.application textarea#address {
+	background:url(../assets/interface.png) no-repeat -10px -404px;
+	border:0;
+	color:#776855;
+	font-size:14px;
+	height:89px;
+	overflow:auto;
+	padding:7px 5px;
+	width:250px;
+	resize:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.body div div div div.application form div input {
+	background:url(../assets/interface.png) no-repeat -10px -946px;
+	border:0;
+	padding:7px 5px;
+	width:250px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color: #776855;
+}
+.body div.applications {
+	margin-bottom:335px;
+}
+.body div.register {
+	margin-bottom:195px;
+}
+.body div.register div h2, .events h2 {
+	color:#756752;
+	text-transform:uppercase;
+	font-size:36px!important;
+	letter-spacing:0.028em;
+	font-weight:bold;
+	text-shadow:0 1px 0 #fff8c7;
+	text-align:center;
+	padding:19px 0 18px!important;
+	margin-bottom:2px!important;
+}
+.body div div div div.staff div.first {
+	padding:29px 20px 4px !important;
+}
+.body div div div div.staff div.first h3:first-letter, .body div div div div.staff div.first h3 span {
+	font-size:26px;
+	color:#756752;
+}
+.body div div div div.staff div.first h3 {
+	border:0;
+	color:#776855;
+	display:inline-block;
+	font-size:20px;
+	font-weight:700;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+}
+.body div div div div.staff div.first form {
+	margin:13px 0 0;
+}
+.body div div div div.staff div.first form input:first-child {
+	margin:0 0 15px;
+}
+.body div div div div.staff div.first form input {
+	background:url(../assets/interface.png) no-repeat -10px -906px;
+	border:0;
+	color:#7c8668;
+	font-size:16px;
+	font-style:italic;
+	margin:0 0 4px;
+	padding:7px 5px;
+	text-shadow:1px 1px 1px #d3d7cd;
+	width:240px;
+	font-family: 'forumregular';
+}
+.body div div div div.staff div.first form a {
+	background: none repeat scroll 0 0 transparent;
+	color: #707070;
+	float: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	text-indent: 0;
+	text-transform: none;
+	line-height:24px;
+	letter-spacing:0.028em;
+	width: auto;
+	font-family: 'forumregular';
+	text-shadow:none;
+}
+.body div div div div.staff div.first form a:hover {
+	color:#707070!important;
+}
+.body div div div div.staff div.first form input#submit {
+	background:url(../assets/interface.png) no-repeat -333px -603px;
+	cursor:pointer;
+	float:right;
+	height:32px;
+	margin:4px 0 0;
+	padding:0 0 3px;
+	width:92px;
+	font-size:16px;
+	line-height:24px;
+	letter-spacing:0.028em;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color:#fff;
+	text-transform:uppercase;
+	text-shadow:0 -1px 0 #99562e;
+	font-style:normal;
+}
+.body div div div div.staff div.first form input#submit:hover {
+	background:url(../assets/interface.png) no-repeat -333px -643px;
+}
+.body div div div div.staff div p {
+	margin: 14px 0 26px;
+}
+.body div div div div.staff div a {
+	background:url(../assets/interface.png) no-repeat -293px -904px;
+	float:none;
+	height:29px;
+	margin:54px auto;
+	width:132px;
+	letter-spacing:0.028em;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color:#fff;
+	text-transform:uppercase;
+	text-shadow:0 -1px 0 #99562e;
+	font-style:normal;
+	text-align:center;
+	padding:3px 0 0;
+}
+.body div div div div.staff div a:hover {
+	background:url(../assets/interface.png) no-repeat -293px -948px;
+	color:#fff!important;
+}
+.body div div div div.staff div ul {
+	margin:4px 0 27px;
+	padding:0;
+	width:auto;
+}
+.body div div div div.staff div ul li {
+	border:0;
+	background:url(../assets/interface.png) no-repeat -362px 2px;
+	padding:0 0 0 20px;
+	margin:0 0 7px;
+}
+.body div div div div.blog div.first, .body div div div div.events div.first {
+	border-style:solid none;
+	min-height:720px;
+	padding:20px 20px 61px!important;
+	width:588px;
+	border-color: #717A5D;
+}
+.body div div div div.blog div p, .body div div div div.events div p {
+	color:#707070;
+	text-align: justify;
+}
+.body div div div div.blog div.first h3 {
+	margin-bottom:21px!important;
+}
+.body div div div div.blog div p {
+	margin:5px 0 24px;
+}
+.body div div div div.blog div p a {
+	margin:0;
+	padding:0;
+	display:inline;
+	float:none;
+	text-decoration:underline;
+}
+.body div div div div.events div p a {
+	display: inline;
+	float: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
+.body div div div div.events div p a:hover {
+	color:#515151;
+}
+.body div div div div.blog div.first h3, .body div div div div.events div.first h3 {
+	margin: 13px 0 23px;
+}
+.body div div div div.blog div h3, .body div div div div.events div h3 {
+	margin-bottom:30px;
+}
+.body div div div div.blog div ul, .body div div div div.events div ul {
+	margin:0;
+	padding:0;
+	width:251px;
+}
+.body div div div div.blog div ul li, .body div div div div.events div ul li {
+	background:none;
+	border-style:none none solid;
+	border-width:1px;
+	margin:0;
+	padding:0;
+}
+.body div div div div.blog div ul li div, .body div div div div.events div ul li div {
+	border:0;
+	min-height:0;
+	padding:25px 20px!important;
+	width:211px!important;
+}
+.body div div div div.blog div ul li div h3 {
+	margin:4px 0 26px;
+}
+.body div div div div.blog div ul li div p {
+	margin:6px 0 1px!important;
+	padding:0!important;
+}
+.body div div div div.blog div ul li div ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:auto;
+}
+.body div div div div.blog div ul li div ul li {
+	border:0;
+}
+.body div div div div.blog div ul li div ul li a {
+	padding:0;
+	margin:0;
+	float:none;
+}
+.body div div div div.blog div ul li div ul li a:hover {
+	text-decoration:underline;
+}
+.body div div div div.blog div ul li div span, .body div div div div.events div ul li div span {
+	font-size:16px;
+	margin: 3px 0 0;
+	line-height:24px;
+	letter-spacing:0.028em;
+	font-family: 'forumregular';
+}
+.body div div div div.events div ul li p {
+	letter-spacing:0;
+	margin:6px 0 0 !important;
+	padding:0!important;
+}
+.body div div div div.blog div ul li div a {
+	color:#707070;
+	display:block;
+	margin:0;
+	padding:0;
+}
+.body div div div div.blog.body div div div div.events {
+	width:880px;
+}
+.body div.contact {
+	margin-bottom:190px;
+}
+.body div.contact div.address {
+	border-style:solid none;
+	border-width:1px;
+	float:none!important;
+	padding:32px 20px 13px !important;
+	width:840px;
+	border-color: #717A5D;
+}
+.body div.contact div.address span {
+	color:#776855;
+	float:left;
+	font-size:17px;
+	font-weight:700;
+	text-transform:uppercase;
+	line-height:24px;
+	width:182px;
+	margin: 2px 0 0;
+}
+.body div.contact div.address span > span {
+	font-size:21px;
+	width:auto;
+	line-height:22px;
+	float: none;
+}
+.body div.contact div.address p {
+	border:0;
+	color:#7c8668;
+	float:left;
+	font-size:16px;
+	font-weight:700;
+	margin:5px 0 12px;
+	padding:0;
+	text-transform:uppercase;
+	width:655px;
+}
+.body div.contact form {
+	border-color:#717A5D;
+	border-style:none none solid;
+	border-width:1px;
+	clear:both;
+	margin:0 0 2px;
+	overflow:hidden;
+	padding:0 0 20px;
+	width:auto;
+}
+.body div.contact form table {
+	margin:0 20px;
+}
+.body div.contact h3 {
+	border:0 none;
+	color:#776855;
+	font-size:17px;
+	font-weight:700;
+	margin:0;
+	padding:28px 0 20px;
+	text-align:center;
+	text-transform:uppercase;
+}
+.body div.contact h3 span {
+	font-size:21px;
+}
+.body div.contact form label {
+	color:#776855;
+	display:inline-block;
+	font-size:17px;
+	font-weight:700;
+	text-transform:uppercase;
+	width:172px;
+	line-height: 30px;
+}
+.body div.contact form textarea {
+	background:url(../assets/interface.png) no-repeat -10px -244px;
+	border:0;
+	color:#776855;
+	font-size:14px;
+	height:136px;
+	overflow:auto;
+	padding:7px 5px;
+	width:410px;
+	resize:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.body div.contact form input#submit {
+	background:url(../assets/interface.png) no-repeat -333px -603px;
+	float:right;
+	height:32px;
+	margin-right:263px;
+	padding:0;
+	width:92px;
+	cursor:pointer;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color:#fff;
+	text-transform:uppercase;
+	text-shadow:0 -1px 0 #99562e;
+	font-style:normal;
+	text-align:center;
+	padding:0 0 3px;
+	font-size:16px;
+}
+.body div.contact form input#submit:hover {
+	background:url(../assets/interface.png) no-repeat -333px -643px;
+}
+.body div.contact div div div.contact {
+	border-bottom: 0 none;
+	margin-bottom: 0;
+	width: auto;
+}
+.body div div.featured div div h3 span, .body div div div div.application form div:first-child label span, .body div div div div.application form div:first-child td span, .body div div div div.register form div:first-child td span, .body div.contact div.address span span, .body div.contact form label span, .body div.contact h3 span, .body div div div div.application form div label span {
+	font-size:20px;
+}
+.body div div div div div.section ul li:first-child, .body div div div div.competition div ul li:first-child, .body div div div div.register form div:first-child a, .body div div div div.staff div ul li p {
+	margin:0;
+}
+.body div div div a:hover, .body div div div div.activities div ul li a:hover, .body div div div div.programs div ul li a:hover, .body div div div div.competition div ul li a:hover {
+	color:#E17537;
+}
+.body div div div div.about div:first-child h3 span, .body div div div div.about div div h3 span, .body div div div div.programs div h3:first-letter, .body div div div div.competition div h3:first-letter, .body div div div div.activities div h3:first-letter, .body div div div div.staff div h3:first-letter, .body div div div div.blog div h3:first-letter, .body div div div div.events div h3:first-letter {
+	font-size:27px;
+	color:#7c8668;
+	font-size:26px;
+	line-height:24px;
+	letter-spacing:0.028em;
+	font-weight:normal;
+}
+.body div div div div.about div:first-child h3, .body div div div div.programs div h3, .body div div div div.competition div h3, .body div div div div.activities div h3, .body div div div div.staff div h3, .body div div div div.activities div h3, .body div div div div.blog div h3, .body div div div div.events div h3, .body div div div div.about div div h3 {
+	border:0;
+	color:#7c8769;
+	font-size:20px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.body div div div div.programs div ul li a:first-letter, .body div div div div.competition div ul li a:first-letter, .body div div div div.activities div ul li a:first-letter, .body div div div div.staff div.first h3 span {
+	font-size:25px;
+}
+.body div div div div.blog div, .body div div div div.events div {
+	border-width:1px;
+	border-style:solid none solid solid;
+	padding:0 0 10px!important;
+	width:251px;
+	border-color: #717A5D;
+}
+/*------------------------- Footer ------------------------*/
+.footer {
+	background-color:#252525;
+	border-color:#1f1a14;
+	border-style:solid none none;
+	border-width:1px;
+}
+.footer div a {
+	outline:none;
+}
+.footer div:first-child {
+	margin:0 auto;
+	overflow:hidden;
+	padding:0 30px 7px;
+	width:900px;
+}
+.footer div:first-child div:first-child {
+	background:url(../assets/interface.png) no-repeat -10px 0;
+	height:234px;
+	margin:22px 0 0;
+	width:285px;
+}
+.footer div:first-child div:first-child h3 {
+	color:#7B8668;
+	font-size:22px;
+	margin:35px 0 0 5px;
+	letter-spacing:0.075em;
+	font-weight:normal;
+}
+.footer div:first-child div:first-child p {
+	color:#e9e1ac;
+	font-size:16px;
+	font-weight:normal;
+	letter-spacing:0.028em;
+	line-height:24px;
+	margin:25px 0 0 5px;
+	padding:0;
+	text-align:left;
+	width:auto;
+	font-family: 'forumregular';
+}
+.footer div:first-child div:first-child form {
+	margin:24px 0 0 5px;
+	overflow:hidden;
+}
+.footer div:first-child div:first-child input:first-child {
+	background:url(../assets/interface.png) no-repeat -10px -1066px;
+	color:#fff;
+	cursor:auto;
+	font-size:16px;
+	font-style:italic;
+	height:auto;
+	margin:0;
+	padding:7px 5px 5px;
+	line-height:0;
+	text-shadow:0 1px 0 #848973;
+	width:190px;
+	cursor:text;
+	font-family: 'forumregular';
+	letter-spacing:0.028em;
+	text-transform:capitalize;
+}
+.footer div:first-child div:first-child input:first-child:hover {
+	background:url(../assets/interface.png) no-repeat -10px -1066px;
+}
+.footer div:first-child div:first-child input {
+	background:url(../assets/interface.png) no-repeat -380px -684px;
+	border:0;
+	cursor:pointer;
+	float:left;
+	height:30px;
+	margin:0 0 0 10px;
+	padding:0;
+	width:50px;
+	font-size:16px;
+	line-height:24px;
+	text-transform:uppercase;
+	letter-spacing:0.028em;
+	text-shadow:0 -1px 0 #99562e;
+	color:#fff;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.footer div:first-child div:first-child input:hover {
+	background:url(../assets/interface.png) no-repeat -380px -717px;
+}
+.footer div:first-child div {
+	float:left;
+	margin:0 0 0 45px;
+	width:310px;
+}
+.footer div:first-child div h4 {
+	color:#6B755A;
+	font-size:18px;
+	font-weight:400;
+	margin:35px 0 15px;
+	text-shadow:0 -1px 0 #141615;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.footer div:first-child div ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.footer div:first-child div ul li:first-child {
+	background:none;
+	padding:0 0 11px;
+}
+.footer div:first-child div ul li {
+	background:url(../assets/border-horizontal.gif) repeat-x left top;
+	padding:3px 0 11px;
+	position:relative;
+}
+.footer div:first-child div ul li p {
+	margin:0;
+	padding:0;
+	text-align:left;
+	width:auto;
+}
+.footer div:first-child div ul li p a {
+	color:#533030;
+	font-size:16px;
+	letter-spacing:0.028em;
+	line-height:24px;
+	font-family: 'forumregular';
+	text-decoration:none;
+}
+.footer div:first-child div ul li p a:hover {
+	color:#aaaaaa!important;
+}
+.footer div:first-child div ul li span {
+	bottom:10px;
+	color:#6B755A;
+	font-size:16px;
+	font-weight:normal;
+	font-family: 'forumregular';
+	letter-spacing:0.028em;
+	position:absolute;
+	line-height:24px;
+	right:0;
+}
+.footer div:first-child div.connect {
+	margin-left: 70px;
 	width: 130px;
 }
-#body div .section .newsletter form #send {
-	background-position: -399px -110px;
-	text-indent: -99999px;
-	width: 80px;
+.footer div:first-child div.connect a:hover {
+	color:#E8E1AB;
 }
-#body > .article {
-	margin: 0;
-	padding: 0;
+.footer div:first-child div.connect a {
+	color:#828282;
+	display:block;
+	font-size:14px;
+	font-weight:700;
+	text-align:center;
+	line-height:24px;
+	letter-spacing:0.025em;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
 }
-#body > .article b {
-	color: #2f394e;
-	display: inline-block;
-	font-weight: normal;
-	margin: 0;
-	padding: 0 10px 15px;
-	text-transform: capitalize;
+.footer div:first-child div.connect a:hover {
+	color:#aaaaaa;
 }
-#body > .article p {
-	color: #464646;
-	font-size: 13px;
-	line-height: 24px;
-	margin: 0;
-	padding: 0 10px;
+.footer div:first-child div.connect a.facebook {
+	background:url(../assets/icons.png) no-repeat 0 -98px;
+	height:22px;
+	margin:22px 0 0 2px;
+	padding-left:40px;
+	width:30px;
 }
-#body > .article p a {
-	color: #464646;
-	text-decoration: underline;
+.footer div:first-child div.connect a.facebook:hover {
+	background:url(../assets/icons.png) no-repeat 0 -123px;
 }
-#body > .article p a:hover {
-	color: #252525;
+.footer div:first-child div.connect a.twitter {
+	background:url(../assets/icons.png) no-repeat 0 0;
+	height:20px;
+	margin:45px 0 0 2px;
+	padding-left:40px;
+	width:30px;
 }
-#body > .article ul {
-	margin: 0;
-	padding: 30px 0 30px 10px;
+.footer div:first-child div.connect a.twitter:hover {
+	background:url(../assets/icons.png) no-repeat 0 -23px;
 }
-#body > .article ul li {
-	color: #464646;
-	line-height: 24px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.footer div:first-child div.connect a.google {
+	background:url(../assets/icons.png) no-repeat 0 -46px;
+	height:23px;
+	line-height: 26px;
+	margin:34px 0 0 2px;
+	padding-left:40px;
+	width:30px;
 }
-#body > .article ul li a {
-	color: #464646;
-	text-decoration: none;
+.footer div:first-child div.connect a.google:hover {
+	background:url(../assets/icons.png) no-repeat 0 -72px;
 }
-#body > .article ul li a:hover {
-	color: #252525;
+.footer div {
+	background:url(../assets/border-horizontal.gif) repeat-x left top;
 }
-#body > .article h3 {
-	padding-bottom: 20px;
-}
-#body .blog {
-	padding: 0;
-}
-#body .content {
-	float: left;
-	margin: 0 35px 0 10px;
-	padding: 0;
-	width: 585px;
-}
-#body .content h3 {
-	padding-bottom: 25px;
-	padding-left: 0;
-}
-#body .content p {
-	color: #464646;
-	font-size: 13px;
-	line-height: 24px;
-	margin: 0;
-	padding: 0 0 24px;
-}
-#body .content p a {
-	color: #464646;
-	text-decoration: underline;
-}
-#body .content p a:hover {
-	color: #252525;
-}
-#body .sidebar {
-	background: url(../images/bg-sidebar.jpg) repeat-y top left;
-	float: right;
-	margin: 0 10px 82px 0;
-	padding: 0;
-	width: 320px;
-}
-#body .sidebar h3 {
-	background: url(../images/bg-sidebar-heading.jpg) no-repeat 0 0;
-	color: #2f394e;
-	font-family: 'Comfortaa-Regular';
-	font-size: 20px;
-	font-weight: normal;
-	letter-spacing: 0.1em;
-	margin: 0;
-	padding: 25px 10px;
-	text-align: center;
-	text-transform: capitalize;
-}
-#body .sidebar ul {
-	background: url(../images/bg-sidebar-footer.jpg) no-repeat bottom left;
-	margin: 0;
-	padding: 0 20px 50px;
-}
-#body .sidebar ul li {
-	list-style: none;
-	margin: 0;
-	padding: 0 0 24px;
-}
-#body .sidebar ul li span {
-	color: #2f394e;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	letter-spacing: 0.01em;
-	line-height: 24px;
-	margin: 0;
-	padding: 0;
-}
-#body .sidebar ul li span a {
-	color: #2f394e;
-	text-decoration: none;
-}
-#body .sidebar ul li span a:hover {
-	color: #4c8f97;
-}
-#body .sidebar ul li p {
-	color: #000;
-	font-size: 13px;
-	line-height: 24px;
-	margin: 0;
-	padding: 0;
-}
-#body .sidebar ul li p a {
-	color: #000;
-	text-decoration: underline;
-}
-#body .sidebar ul li p a:hover {
-	color: #4c8f97;
-}
-#footer {
-	background: #4c8f96;
-	border-top: 1px solid #9bd9e0;
-	margin: 0;
-	padding: 0;
-}
-#footer > div {
-	margin: 0 auto;
-	padding: 30px 0 28px;
-	overflow: hidden;
-	text-align: center;
-	width: 960px;
-}
-#footer div p {
-	color: #ededed;
-	display: inline-block;
-	float: right;
-	font-size: 12px;
-	letter-spacing: 0.05em;
-	margin: 0;
-	padding: 27px 0 0;
-	text-align: center;
-}
-#footer div .connect {
-	background: #387a82;
-	float: right;
-	height: 18px;
-	margin: 0 20px 0 150px;
-	padding: 22px 20px;
-	overflow: hidden;
-	width: 144px;
-}
-#footer div .connect span {
-	color: #ededed;
-	display: inline-block;
-	float: left;
-	font-size: 12px;
-	height: 19px;
-	line-height: 21px;
-	margin: 0;
-	padding: 0 0 0 39px;
-}
-#footer div .connect a {
-	background: url(../images/icons.png) no-repeat;
-	display: block;
-	float: left;
-	height: 20px;
-	margin: 0 8px;
-	padding: 0;
-	text-indent: -99999px;
-	width: 20px;
-}
-#footer div .connect #twitter {
-	background-position: 0 -32px;
-}
-#footer div .connect #twitter:hover {
-	background-position: -25px -32px;
-}
-#footer div .connect #facebook {
-	background-position: 0 -57px;
-}
-#footer div .connect #facebook:hover {
-	background-position: -25px -57px;
-}
-#footer div .connect #googleplus {
-	background-position: 0 -82px;
-}
-#footer div .connect #googleplus:hover {
-	background-position: -25px -82px;
-}
-#footer div .connect #pinterest {
-	background-position: 0 -107px;
-}
-#footer div .connect #pinterest:hover {
-	background-position: -25px -107px;
+.footer div p {
+	color:#6b7459;
+	font-size:16px;
+	margin:0 auto;
+	letter-spacing:0.028em;
+	padding:10px 60px 14px 0;
+	text-align:right;
+	width:900px;
+	font-family: 'forumregular';
 }
