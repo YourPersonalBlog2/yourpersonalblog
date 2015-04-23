@@ -1,7 +1,7 @@
 /* Website template by freewebsitetemplates.com */
 /*------------------------- Layout styles ------------------------*/
 body {
-	background:url(../assets/bg-body.jpg);
+	background:#999999;
 	margin:0;
 	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
@@ -43,6 +43,7 @@ p a:hover {
 }
 .header div a#logo img {
 	border:0;
+	margin-top: 4px;
 }
 .header div ul {
 	list-style:none;
